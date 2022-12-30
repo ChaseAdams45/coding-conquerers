@@ -196,8 +196,48 @@ def switch_map(room):
 #Opens the map as listed in maps.txt in the Maps folder.
 def restart(room, player_hit_points, player_rect, Sword_rect, sword_rect, PLAYER_rect):
     room == 0
-    if player_hit_points == 3:
+    if player_hit_points == 0:
       player_hit_points += 3
+      
+    if player_hit_points == 1:
+      player_hit_points += 2
+      
+    if player_hit_points == 2:
+      player_hit_points += 1
+      
+    if player_hit_points == 3:
+      player_hit_points += 0
+      
+    if room == 1:
+        room -= 1
+
+        PLAYER_rect = pygame.Rect(200, 200, 25, 25)
+        Sword_rect = pygame.Rect(225, 205, 20, 25)
+
+    if room == 2:
+        room -= 2
+
+        PLAYER_rect = pygame.Rect(200, 200, 25, 25)
+        Sword_rect = pygame.Rect(225, 205, 20, 25)
+
+    if room == 3:
+        room -= 3
+
+        PLAYER_rect = pygame.Rect(200, 200, 25, 25)
+        Sword_rect = pygame.Rect(225, 205, 20, 25)
+
+    if room == 4:
+        room -= 4
+
+        PLAYER_rect = pygame.Rect(200, 200, 25, 25)
+        Sword_rect = pygame.Rect(225, 205, 20, 25)
+
+    if room == 0:
+        room -= 0
+
+        PLAYER_rect = pygame.Rect(200, 200, 25, 25)
+        Sword_rect = pygame.Rect(225, 205, 20, 25)
+        
     PLAYER_rect = pygame.Rect(200, 200, 25, 25)
     Sword_rect = pygame.Rect(225, 205, 20, 25)
 
