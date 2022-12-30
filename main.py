@@ -514,7 +514,7 @@ while run:
     # create a text surface object,
     # on which text is drawn on it.
     #text = font.render('GeeksForGeeks', True, green, blue)
-    restart_text = font.render('You can press "r" to restart!', True, purple, navy)
+    restart_text = font.render('You can press "r" to restart!"WIP"', True, purple, navy)
     screen.blit(restart_text, (0,0))
     health = font.render(f'Health points: {player_hit_points}', True, purple,
                          navy)
